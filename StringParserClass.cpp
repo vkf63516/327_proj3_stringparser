@@ -39,8 +39,8 @@ namespace KP_StringParserClass {
 		return (SUCCESS);
 	}
 
-	int KP_StringParserClass::StringParserClass::getDataBetweenTags(
-			char *pDataToSearchThru, vector<string> &myVector) {
+	int StringParserClass::getDataBetweenTags(char *pDataToSearchThru,
+			vector<string> &myVector) {
 
 		if (pStartTag == NULL || pEndTag == NULL) {
 			return (ERROR_TAGS_NULL);
@@ -73,12 +73,12 @@ namespace KP_StringParserClass {
 		return (SUCCESS);
 	}
 
-	void KP_StringParserClass::StringParserClass::cleanup() {
+	void StringParserClass::cleanup() {
 
 	}
 
-	int KP_StringParserClass::StringParserClass::findTag(char *pTagToLookFor,
-			char *&pStart, char *&pEnd) {
+	int StringParserClass::findTag(char *pTagToLookFor, char *&pStart,
+			char *&pEnd) {
 
 		if (pStart == NULL || pEnd == NULL) {
 			return (ERROR_TAGS_NULL);
